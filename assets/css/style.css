@@ -1,24 +1,77 @@
 @font-face {
   font-family: 'segoe';
   src: url("../fonts/Segoe.ttf"); }
-nav {
-  background-image: url("../pictures/hoverBackground_header.png"); }
-  nav .content_nav {
-    justify-content: space-around;
-    min-height: 150px; }
-    nav .content_nav .navbar-brand {
+header {
+  background-image: url("../pictures/background_header.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; }
+  header nav {
+    background-image: url("../pictures/hoverBackground_header.png");
+    opacity: 0.9;
+    position: fixed !important;
+    width: 100%;
+    top: 0; }
+    header nav .content_nav {
+      justify-content: space-around;
+      min-height: 150px; }
+      header nav .content_nav .navbar-brand {
+        font-family: 'segoe';
+        font-size: 30px;
+        color: white;
+        font-weight: bold; }
+        header nav .content_nav .navbar-brand span {
+          color: #4bcaff; }
+      header nav .content_nav ul li a {
+        color: white !important;
+        font-size: 14px;
+        font-weight: bold; }
+      header nav .content_nav ul li a:hover {
+        color: #4bcaff !important;
+        border: 1px solid #4bcaff; }
+  header h1 {
+    font-family: 'segoe' sans-serif;
+    font-weight: lighter;
+    font-size: 42px;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 140px; }
+    header h1 span {
+      background-color: #3b454d;
+      padding: 5px 15px; }
+
+/* ----------------------- SERVICES ----------------------- */
+#services {
+  background-color: #4bcaff;
+  min-height: 408px;
+  color: white;
+  display: flex;
+  align-items: center; }
+  #services #content_services {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+    #services #content_services h2 {
       font-family: 'segoe';
       font-size: 30px;
-      color: white;
-      font-weight: bold; }
-      nav .content_nav .navbar-brand span {
-        color: #4bcaff; }
-    nav .content_nav ul li a {
-      color: white !important;
-      font-size: 14px;
-      font-weight: bold; }
-    nav .content_nav ul li a:hover {
-      color: #4bcaff !important;
-      border: 1px solid #4bcaff; }
+      font-weight: lighter; }
+    #services #content_services #box_services {
+      display: flex; }
+      #services #content_services #box_services div {
+        font-family: 'segoe';
+        font-size: 12px;
+        font-weight: 600;
+        height: 175px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; }
 
 /*# sourceMappingURL=style.css.map */

@@ -6,40 +6,119 @@
  }
 
  
- 
- nav {
-     background-image: url('../pictures/hoverBackground_header.png');
+header { 
+    background-image: url('../pictures/background_header.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     
-    .content_nav {
-        justify-content: space-around;
-        min-height: 150px;
+    nav {
+        background-image: url('../pictures/hoverBackground_header.png');
+        opacity: 0.9;
+        position: fixed !important;
+        width: 100%;
+        top: 0;
+        
+        .content_nav {
+            justify-content: space-around;
+            min-height: 150px;
+            
 
-        .navbar-brand {
-            font-family: 'segoe';
-            font-size: 30px;
-            color: white;
-            font-weight: bold;
+            .navbar-brand {
+                font-family: 'segoe';
+                font-size: 30px;
+                color: white;
+                font-weight: bold;
+
+                span {
+                    color: #4bcaff;
+                }
+            }
+
+            ul {
+
+                li {
+                    a {
+                        color: white !important;
+                        font-size: 14px;
+                        font-weight: bold;
+                    }
+
+                    a:hover {
+                        color: #4bcaff !important;
+                        border: 1px solid #4bcaff;
+                    }
+                }
+            }
+        
+        }
+    }
+    
+    h1 {
+        font-family: 'segoe' sans-serif;
+        font-weight: lighter;
+        font-size: 42px;
+        text-transform: uppercase;
+        color: white;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 140px;
+
 
             span {
-                color: #4bcaff;
+                background-color: #3b454d;
+                padding: 5px 15px;
             }
         }
-
-        ul {
-
-            li {
-                a {
-                    color: white !important;
-                    font-size: 14px;
-                    font-weight: bold;
-                }
-
-                a:hover {
-                    color: #4bcaff !important;
-                    border: 1px solid #4bcaff;
-                }
-            }
-        }
-    
     }
- }
+
+/* ----------------------- SERVICES ----------------------- */
+
+#services {
+    background-color: #4bcaff;
+    min-height: 408px;
+    color: white;
+    display: flex;
+    align-items: center;
+
+    #content_services {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        h2 {
+            font-family: 'segoe';
+            font-size: 30px;
+            font-weight: lighter;
+        }
+
+        #box_services {
+        display: flex;
+
+            div {
+                font-family: 'segoe';
+                font-size: 12px;
+                font-weight: 600;
+                height: 175px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                h2 {
+                
+                }
+
+                p {
+                
+                }
+            }    
+        }
+    }
+}
+
