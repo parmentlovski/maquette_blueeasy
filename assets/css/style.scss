@@ -1,0 +1,45 @@
+ // AJOUT FONTS 
+ 
+ @font-face {
+    font-family: 'segoe';
+    src: url("../fonts/Segoe.ttf"); 
+ }
+
+ 
+ 
+ nav {
+     background-image: url('../pictures/hoverBackground_header.png');
+    
+    .content_nav {
+        justify-content: space-around;
+        min-height: 150px;
+
+        .navbar-brand {
+            font-family: 'segoe';
+            font-size: 30px;
+            color: white;
+            font-weight: bold;
+
+            span {
+                color: #4bcaff;
+            }
+        }
+
+        ul {
+
+            li {
+                a {
+                    color: white !important;
+                    font-size: 14px;
+                    font-weight: bold;
+                }
+
+                a:hover {
+                    color: #4bcaff !important;
+                    border: 1px solid #4bcaff;
+                }
+            }
+        }
+    
+    }
+ }

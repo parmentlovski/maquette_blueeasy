@@ -1,3 +1,24 @@
-
+@font-face {
+  font-family: 'segoe';
+  src: url("../fonts/Segoe.ttf"); }
+nav {
+  background-image: url("../pictures/hoverBackground_header.png"); }
+  nav .content_nav {
+    justify-content: space-around;
+    min-height: 150px; }
+    nav .content_nav .navbar-brand {
+      font-family: 'segoe';
+      font-size: 30px;
+      color: white;
+      font-weight: bold; }
+      nav .content_nav .navbar-brand span {
+        color: #4bcaff; }
+    nav .content_nav ul li a {
+      color: white !important;
+      font-size: 14px;
+      font-weight: bold; }
+    nav .content_nav ul li a:hover {
+      color: #4bcaff !important;
+      border: 1px solid #4bcaff; }
 
 /*# sourceMappingURL=style.css.map */
