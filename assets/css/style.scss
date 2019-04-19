@@ -10,6 +10,16 @@
 //     src: url("../fonts/Segoe-bold.ttf"); 
 //  }
 
+// VARIABLES 
+
+// HR 
+$hr-mr : 0;
+$hr-ml : 0;
+$hr-mt: 0;
+$hr-mb : 34px;
+$hr-width : 4%;
+$hr-border : 1px solid white;
+
  
 header { 
     background-image: url('../pictures/background_header.jpg');
@@ -106,11 +116,19 @@ header {
         h2 {
             font-size: 30px;
             font-weight: lighter;
-            padding-bottom: 34px;
+        }
+
+        hr {   
+            border: $hr-border;
+            margin-left: $hr-ml;
+            margin-top: $hr-mt;
+            margin-bottom: $hr-mb;
+            width: $hr-width;
         }
 
         #box_services {
         display: flex;
+        flex-direction: row;
 
 
             div {
@@ -135,4 +153,8 @@ header {
         }
     }
 }
+
+
+
+
 
