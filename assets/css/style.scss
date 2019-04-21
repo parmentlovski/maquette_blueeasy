@@ -12,14 +12,16 @@
 
 // VARIABLES 
 
-// HR 
-$hr-mr : 0;
-$hr-ml : 0;
-$hr-mt: 0;
-$hr-mb : 34px;
-$hr-width : 4%;
-$hr-border : 1px solid white;
+$breadcrumb-divider: quote("|");
 
+
+// GENERALES 
+
+li {
+    list-style: none;
+}
+
+// CSS 
  
 header { 
     background-image: url('../pictures/background_header.jpg');
@@ -29,14 +31,15 @@ header {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     
     #box_nav { 
-        background-image: url('../pictures/hoverBackground_header.png');
+        background-color: #353f47;
         display: flex;
         align-items: center;
         justify-content: center;
         min-height: 130px;
         position: fixed !important;
         top: 0;
-        opacity: 0.9;  
+        opacity: 0.9;
+        z-index: 1000;  
 
         nav {
             width: 100%;
@@ -119,11 +122,12 @@ header {
         }
 
         hr {   
-            border: $hr-border;
-            margin-left: $hr-ml;
-            margin-top: $hr-mt;
-            margin-bottom: $hr-mb;
-            width: $hr-width;
+            border: 1px solid white;
+            margin-left: 0;
+            margin-right: 0;
+            margin-top: 0;
+            margin-bottom: 34px;
+            width: 4%;
         }
 
         #box_services {
@@ -147,14 +151,380 @@ header {
                 p {
                     font-weight: 500;
                     font-size: 12px;
-                    padding-top: 18px;
+                    margin-top: 18px;
                 }
             }    
         }
     }
 }
 
+/* ----------------------- PORTFOLIO ----------------------- */
+
+#portfolio {
+
+    .container {
+
+        margin-bottom: 80px;
+       
+        #top_portfolio {
+            margin-top: 80px;
+            margin-bottom: 80px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        hr {
+            border: 1px solid black;
+            margin-left: 0;
+            margin-right: 0;
+            margin-top: 0;
+            margin-bottom: 34px;
+            width: 4%;
+        }
+    }
+}
 
 
+/* ----------------------- DEFAULT ----------------------- */
 
+#default {
+    background-color: #515f67;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
+    .container {
+        margin-top: 78px;
+        margin-bottom: 78px;
+
+        #box_default {
+            display: flex;
+            align-items: center;
+
+            #text_default { 
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        
+                h2 {
+                    margin-top: 80px;
+                    font-weight: lighter;
+                    font-size: 30px;
+                    color: white;
+                }
+        
+                hr {
+                    border: 1px solid white;
+                    margin-left: 0;
+                    margin-right: 0;
+                    margin-top: 0;
+                    margin-bottom: 40px;            
+                    width: 10%;
+                }
+                
+                p {
+                    font-size: 14px;
+                    color: white;
+        
+                }
+        
+                button {
+                    margin-top: 40px;
+                    margin-bottom: 90px;
+                    font-weight: bold;
+                    font-size: 14px;
+                    color: #353f46;
+                    border: 2px solid #353f46;
+                    background-color: #515f67;
+                    padding: 15px 38px;
+                }
+        
+                button:hover {
+                    background-color: white;
+                }
+            }        
+        }
+    }
+}
+
+/* ----------------------- TWITTER ----------------------- */
+#section {
+    background-color: hsl(198, 100%, 65%);
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    .container{
+        padding-top: 80px;
+        padding-bottom: 80px;
+    
+        .row {
+            display: flex;
+            flex-direction: column;
+
+            #title_twitter {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                h2 {
+                    font-weight: lighter;
+                    font-size: 30px;
+                }
+            }
+
+            #text_twitter {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 28px;
+
+                hr {
+                    border: 1px solid white;
+                    width: 4.5%;
+                    margin-left: 0;
+                    margin-top: 0;
+                    margin-bottom: 40px;
+                }
+
+                a {
+                    color: white;
+                    text-decoration: none;
+                    span {
+                        font-family: 'Segoe UI Semibold', Tahoma, Geneva, Verdana, sans-serif;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ----------------------- JOHN DOE ----------------------- */
+
+#john_doe {
+    background-image: url('../pictures/background_photographe.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+
+    .container {
+        padding-top: 100px;
+        padding-bottom: 176px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        h2 {
+            font-weight: lighter;
+            font-size: 30px;
+        }
+
+        hr {
+            border: 1px solid white;
+            width: 4.5%;
+            margin-left: 0;
+            margin-top: 0;
+            margin-bottom: 40px;
+        }
+
+        #content_who {
+
+            #content_text {
+
+                p {
+                    font-size: 14px;
+                }
+            }
+
+            #content_social {
+
+                p {
+                    font-size: 14px;
+                }
+
+                a { 
+                    padding: 15px;                            
+                    border: 1px solid white;
+                    color: white;   
+                }
+                            
+                a :hover {
+                    border: 1px solid #4bcaff;
+                    color: #4bcaff;
+                }
+            }
+
+        }
+    }
+}
+
+/* ----------------------- TESTIMONIALS ----------------------- */
+
+#testimonials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .container{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        padding: 80px 0;
+
+        #title_testimonials {
+            display: flex;
+            justify-content: space-between;
+
+            h2  {
+                font-size: 30px;
+                font-weight: lighter;
+            }
+        }
+
+        #text_testimonials {
+
+            hr {
+                border: 1px solid black;
+                width: 4%;
+                margin-left: 0;
+                margin-top: 0;
+                margin-bottom: 40px;
+            }
+
+            p {
+                font-size: 28px;
+                font-weight: lighter;
+
+                span {
+                    font-weight: bold;
+                    font-size: 14px;
+                    margin-top: 48px;
+                    color: #4bcaff;
+                }
+            }
+        }
+    }
+}
+
+/* ----------------------- CONTACT ----------------------- */
+
+#contact {
+    background-image: url('../pictures/background_contact.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 810px;
+
+    .container {
+        margin: 80px 0;
+        display: flex;
+        flex-direction: column;
+        color: white;
+
+        h2  {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: lighter;
+            font-size: 30px;
+        }
+
+        hr {
+            border: 1px solid white;
+            width: 4%;
+            margin-left: 0;
+            margin-top: 0;
+            margin-bottom: 35px;
+        }
+
+        form {
+            label {
+                font-family: 'Segoe UI Bold', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 14px;
+            }
+
+            button {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-weight: bold;
+                margin-top: 40px;
+                padding-top: 12px;
+                padding-bottom: 12px;
+                background-color: #4bcaff;
+                border: none;
+            }
+
+            input, textarea {
+                background-color: transparent;
+            }
+
+            #form_top {
+                display: flex;
+                flex-direction: row;
+
+                p{
+                    margin-bottom: 40px;
+                    margin-top: 20px;
+                    font-family: 'Segoe UI Semibold', Tahoma, Geneva, Verdana, sans-serif;
+                    font-size: 14px;
+                }
+            }
+
+            #form_center {
+                display: flex;
+                justify-content: space-between;
+
+                ul {
+                    font-family: 'Segoe UI Semibold', Tahoma, Geneva, Verdana, sans-serif;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+/* ----------------------- FOOTER ----------------------- */
+
+#footer {
+    background-color: #353f47;
+    display: flex;
+    align-items: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    #content_footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        nav {
+            
+
+            ol {
+                background-color: transparent !important;
+
+                li {
+                    a {
+                        color: #515f67 !important;
+                        font-family: 'Segoe UI Semibold', Tahoma, Geneva, Verdana, sans-serif;
+                        font-size: 12px;
+                    }
+                }
+
+                li :hover {
+                    text-decoration: none !important;
+                    color: #4bcaff !important;
+                }
+
+                li:nth-child(2)::before,
+                li:nth-child(3)::before,
+                li:nth-child(4)::before {
+                    content: $breadcrumb-divider;
+                }
+            }
+        }
+
+        p {
+            padding-right: 5px;
+            display: flex;
+            color: #515f67;
+            font-family: 'Segoe UI Semibold', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 12px;
+        }
+    }
+}
