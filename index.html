@@ -10,11 +10,11 @@
   </head>
   <body>
 
-    <header class="container-fluid pl-0 pr-0" id="return_top">
+    <header id="return_top">
 
         <div class="container-fluid" id="box_nav">
             
-            <nav class="container navbar navbar-expand-lg navbar-light">
+            <nav class="container navbar navbar-expand-lg navbar-light p-0">
                     
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
                     aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,7 +24,7 @@
                     
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
 
-                    <ul class="navbar-nav ml-auto ">
+                    <ul class="navbar-nav ml-auto">
                         <li class="nav-item active">
                             <a class="nav-link" href="#return_top">HOME</a>
                         </li>
@@ -90,9 +90,9 @@
 
 <section id="portfolio" class="container-fluid">
 
-    <div class="container">
+    <div class="container pl-0">
         
-        <div id="top_portfolio">
+        <div id="top_portfolio" class="row">
             <h2>PORTFOLIO</h2>
         
             <ul class="nav justify-content-end">
@@ -109,37 +109,37 @@
                     <a class="nav-link" href="#">MACRO</a>
                 </li>
                 <li class="nav-item"> 
-                    <a class="nav-link disabled" href="#">JOURNAL</a>
+                    <a class="nav-link" href="#">JOURNAL</a>
                 </li>
             </ul>
         </div>
         <hr>
+        <div class="container">
             <div class="row">
                 <div class="col-3"><img src="assets/pictures/portfolio_img1.jpg" alt="photo d'un pont en S" width="270" height="270"></div>
                 <div class="col-3"><img src="assets/pictures/portfolio_img2.jpg" alt="photo du toit d'un pont" width="270" height="270"></div>
                 <div class="col-3"><img src="assets/pictures/portfolio_img3.jpg" alt="photo d'une île" width="270" height="270"></div>
                 <div class="col-3"><img src="assets/pictures/portfolio_img4.jpg" alt="photo d'un arbre sur une île"></div>
             </div>
-            
             <div class="row">
                 <div class="col-3"><img src="assets/pictures/portfolio_img5.jpg" alt="photo d'un cabane" width="270" height="270"></div>
                 <div class="col-3"><img src="assets/pictures/portfolio_img6.jpg" alt="photo d'un surfeur" width="270" height="270"></div>
                 <div class="col-3"><img src="assets/pictures/portfolio_img7.jpg" alt="photo d'une chaine de montagne" width="270" height="270"></div>
                 <div class="col-3"><img src="assets/pictures/portfolio_img8.jpg" alt="photo d'une montagne" width="270" height="270"></div>
             </div>
+        </div>
     </div>
 </section> 
 
 <!-- ----------------------- DEFAULT ----------------------- -->
 
 <section id="default" class="container-fluid">
-        <div class="container">
+        <div class="container p-0">
             <div class="row" id="box_default">
-                <div id="text_default" class="col-5">
+                <div id="text_default" class="col-5 pr-0">
                     <h2>JUST DEFAULT SECTION</h2>
                     <hr>
-                    <p>Bear claw marzipan bear claw applicake I love muffin. Lemon drops gummi bears pastry gummi bears sesame snaps I love unerdwear.com. Soufflé cotton candy dessert candy ice cream wafer gummies cheesecake brownie.</p>
-                    <br>
+                    <p id="space_default">Bear claw marzipan bear claw applicake I love muffin. Lemon drops gummi bears pastry gummi bears sesame snaps I love unerdwear.com. Soufflé cotton candy dessert candy ice cream wafer gummies cheesecake brownie.</p>
                     <p>Muffin chupa chups jelly beans sweet pie applicake. Croissant chocolate cake I love pudding. Ice cream I love powder pudding apple pie marshmallow. Cupcake marzipan oat cake bonbon I love candy canes toffee.</p>
                     <button>VISIT ME</button>
                 </div>
@@ -179,14 +179,14 @@
 <!-- ----------------------- JOHN DOE ----------------------- -->
 
 <section id="john_doe" class="container-fluid">
-    <div class="container">
+    <div class="container pl-0">
         <h2>WHO IS JOHN DOE ?</h2>
         <hr>
-            <div id="content_who" class="row">
+            <div id="content_who" class="row pl-0">
                 <div id="content_text" class="col-6">
                     <p>Bear claw marzipan bear claw applicake I love muffin. Lemon drops gummi bears pastry gummi bears sesame snaps I love unerdwear.com.
                         Soufflé cotton candy dessert candy ice cream wafer gummies cheesecake brownie.
-                    </p><br>
+                    </p>
                     <p>Muffin chupa chups jelly beans sweet pie applicake. Croissant chocolate cake I love pudding. Ice cream I love powder pudding apple 
                         pie marshmallow. Cupcake marzipan oat cake bonbon I love candy canes toffee.
                     </p>
@@ -194,11 +194,13 @@
                 <div id="content_social" class="col-6">
                     <p>Pudding dessert jujubes tiramisu gingerbread croissant tiramisu applicake. Sesame snaps sugar plum cotton candy chocolate
                         bonbon lemon drops candy canes cotton candy. Cake toffee pie bear claw pastry.
-                    </p><br>
-                    <a href="twitter.com"><i class="fab fa-twitter" alt="logo de twitter"></i></a>
-                    <a href="google.com"><i class="fab fa-google-plus-g" alt="logo de google+"></i></a> 
-                    <a href="dribbble.com"><i class="fab fa-dribbble" alt="logo de dribbble"></i></a>
-                    <a href="coffee.com"><i class="fas fa-coffee" alt="logo d'un café"></i></a>
+                    </p>
+                    <ul>
+                        <li><a href="twitter.com"><i class="fab fa-twitter" alt="logo de twitter"></i></a></li>
+                        <li><a href="google.com"><i class="fab fa-google-plus-g" alt="logo de google+"></i></a></li>
+                        <li><a href="dribbble.com"><i class="fab fa-dribbble" alt="logo de dribbble"></i></a></li>
+                        <li><a href="coffee.com"><i class="fas fa-coffee" alt="logo d'un café"></i></a></li>
+                    </ul>   
                 </div>
             </div>
     </div>
@@ -227,7 +229,7 @@
 
 <section id="contact" class="container-fluid">
 
-    <div class="container">
+    <div class="container pl-0">
         <h2>CONTACT</h2>
         <hr>
 
@@ -256,7 +258,7 @@
                         <li>(715) 946 -1234</li>
                     </ul>
                 </div>
-            <div class="form-group row">
+            <div class="form-group">
                 <label for="textarea">MESSAGE</label>
                 <textarea class="form-control col-12" id="textarea" rows="5"></textarea>
             </div>
@@ -270,7 +272,7 @@
 
 <section id="footer" class="container-fluid">
 
-    <div id="content_footer" class="container">
+    <div id="content_footer" class="container pl-0">
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="#return_top">HOME</a></li>
