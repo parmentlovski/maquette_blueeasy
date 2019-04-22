@@ -20,7 +20,7 @@ h2 {
 li {
   list-style: none; }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 991px) {
   h2 {
     text-align: center;
     font-family: "segoe", sans-serif;
@@ -66,7 +66,7 @@ header {
         header #box_nav nav #navbarTogglerDemo03 ul li a:hover {
           border: 1px solid #4bcaff;
           color: #4bcaff; }
-        @media (min-width: 768px) {
+        @media (min-width: 768px) and (max-width: 991px) {
           header #box_nav nav #navbarTogglerDemo03 ul li a:hover {
             border: 1px solid transparent; } }
       header #box_nav nav #navbarTogglerDemo03 ul li:last-child {
@@ -92,16 +92,16 @@ header {
     #content_header h1 span {
       background-color: #3b454d;
       padding: 5px 15px; }
-    @media (min-width: 768px) {
+    @media (min-width: 768px) and (max-width: 991px) {
       #content_header h1 span {
         padding: 5px 10px; }
       #content_header h1 span:last-child {
         margin-top: 20px; } }
-  @media (min-width: 768px) {
+  @media (min-width: 768px) and (max-width: 991px) {
     #content_header h1 {
       font-size: 35px; } }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 991px) {
   #content_header {
     padding-top: 0; } }
 /* ----------------------- SERVICES ----------------------- */
@@ -139,7 +139,7 @@ header {
           font-family: "Segoe UI Semibold", Tahoma, Geneva, Verdana, sans-serif;
           font-size: 11px;
           margin-top: 18px; }
-        @media (min-width: 768px) {
+        @media (min-width: 768px) and (max-width: 991px) {
           #services #content_services #box_services div h3 {
             display: flex;
             justify-content: center;
@@ -169,12 +169,12 @@ header {
       #portfolio .container #top_portfolio ul li a:hover {
         border: 2px solid #4bcaff;
         color: #4bcaff; }
-      @media (min-width: 768px) {
+      @media (min-width: 768px) and (max-width: 991px) {
         #portfolio .container #top_portfolio ul li a:hover {
           border: 2px solid transparent; } }
     #portfolio .container #top_portfolio ul li:last-child {
       margin-right: -2%; }
-    @media (min-width: 768px) {
+    @media (min-width: 768px) and (max-width: 991px) {
       #portfolio .container #top_portfolio h2 {
         margin-bottom: 0;
         margin-left: auto;
@@ -196,7 +196,7 @@ header {
     margin-right: -20px !important; }
   #portfolio .container .container .row:first-child {
     margin-bottom: 15px; }
-  @media (min-width: 768px) {
+  @media (min-width: 768px) and (max-width: 991px) {
     #portfolio .container .container {
       display: flex;
       flex-direction: column;
@@ -242,7 +242,7 @@ header {
       #default .container #box_default #text_default button:hover {
         background-color: white;
         border: 2px solid transparent; }
-      @media (min-width: 768px) {
+      @media (min-width: 768px) and (max-width: 991px) {
         #default .container #box_default #text_default h2 {
           margin-bottom: 30px; }
         #default .container #box_default #text_default p {
@@ -256,10 +256,10 @@ header {
           bottom: -420px; } }
       #default .container #box_default #video_default {
         margin-top: 15px; }
-        @media (min-width: 768px) {
+        @media (min-width: 768px) and (max-width: 991px) {
           #default .container #box_default #video_default video {
             margin: 30px auto; } }
-    @media (min-width: 768px) {
+    @media (min-width: 768px) and (max-width: 991px) {
       #default .container #box_default {
         display: flex;
         text-align: center;
@@ -299,7 +299,7 @@ header {
           text-decoration: none; }
           #section .container .row #text_twitter a span {
             font-family: "Segoe UI Semibold", Tahoma, Geneva, Verdana, sans-serif; }
-        @media (min-width: 768px) {
+        @media (min-width: 768px) and (max-width: 991px) {
           #section .container .row #text_twitter p {
             font-size: 28px; } }
 
@@ -340,6 +340,19 @@ header {
       #john_doe .container #content_who #content_social ul li a:hover {
         border: 2px solid #4bcaff;
         color: #4bcaff; }
+    @media (min-width: 768px) and (max-width: 991px) {
+      #john_doe .container #content_who #content_social ul {
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 80px; } }
+    @media (min-width: 768px) and (max-width: 991px) {
+      #john_doe .container #content_who p {
+        font-size: 16px; } }
+    @media (min-width: 768px) and (max-width: 991px) {
+      #john_doe .container #content_who {
+        display: flex;
+        flex-direction: column;
+        align-items: center; } }
 
 /* ----------------------- TESTIMONIALS ----------------------- */
 #testimonials {
@@ -427,7 +440,7 @@ header {
       #contact .container form #form_center ul {
         font-family: "Segoe UI Semibold", Tahoma, Geneva, Verdana, sans-serif;
         font-size: 14px; }
-    @media (min-width: 768px) {
+    @media (min-width: 768px) and (max-width: 991px) {
       #contact .container form button {
         display: flex;
         justify-content: center;
@@ -450,9 +463,9 @@ header {
         color: #515f67 !important;
         font-family: "Segoe UI Semibold", Tahoma, Geneva, Verdana, sans-serif;
         font-size: 12px; }
-      @media (min-width: 768px) {
+      @media (min-width: 768px) and (max-width: 991px) {
         #footer #content_footer nav ol li a {
-          font-size: 20px; } }
+          font-size: 16px; } }
       #footer #content_footer nav ol li :hover {
         text-decoration: none !important;
         color: #4bcaff !important; }
@@ -466,8 +479,8 @@ header {
       color: #515f67;
       font-family: "Segoe UI Semibold", Tahoma, Geneva, Verdana, sans-serif;
       font-size: 12px; }
-    @media (min-width: 768px) {
+    @media (min-width: 768px) and (max-width: 991px) {
       #footer #content_footer p {
-        font-size: 20px; } }
+        font-size: 16px; } }
 
 /*# sourceMappingURL=style.css.map */
