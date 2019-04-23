@@ -27,11 +27,9 @@ li {
     font-size: 40px;
     margin-bottom: 50px; }
 
-  #box_nav {
-    position: initial !important; }
-
   hr {
     display: none; } }
+/* ----------------------- HEADER ----------------------- */
 header {
   background-image: url("../pictures/background_header.jpg");
   background-size: cover;
@@ -63,14 +61,37 @@ header {
           font-size: 14px;
           color: white;
           border: 1px solid transparent; }
+        header #box_nav nav #navbarTogglerDemo03 ul li .active {
+          border: 1px solid #4bcaff; }
         header #box_nav nav #navbarTogglerDemo03 ul li a:hover {
           border: 1px solid #4bcaff;
           color: #4bcaff; }
+        @media (max-width: 575px) {
+          header #box_nav nav #navbarTogglerDemo03 ul li .active {
+            border: 1px solid transparent; }
+          header #box_nav nav #navbarTogglerDemo03 ul li a:hover {
+            border: 2px solid transparent; } }
+        @media (min-width: 576px) and (max-width: 767px) {
+          header #box_nav nav #navbarTogglerDemo03 ul li .active {
+            border: 1px solid transparent; }
+          header #box_nav nav #navbarTogglerDemo03 ul li a:hover {
+            border: 2px solid transparent; } }
         @media (min-width: 768px) and (max-width: 991px) {
+          header #box_nav nav #navbarTogglerDemo03 ul li .active {
+            border: 1px solid transparent; }
           header #box_nav nav #navbarTogglerDemo03 ul li a:hover {
             border: 1px solid transparent; } }
       header #box_nav nav #navbarTogglerDemo03 ul li:last-child {
         padding-right: 0 !important; }
+  @media (max-width: 575px) {
+    header #box_nav {
+      position: initial; } }
+  @media (min-width: 576px) and (max-width: 767px) {
+    header #box_nav {
+      position: initial; } }
+  @media (min-width: 768px) and (max-width: 991px) {
+    header #box_nav {
+      position: initial; } }
 
 #content_header {
   display: flex;
@@ -94,13 +115,27 @@ header {
       padding: 5px 15px; }
     @media (min-width: 768px) and (max-width: 991px) {
       #content_header h1 span {
-        padding: 5px 10px; }
+        padding: 5px 5px; }
+      #content_header h1 span:last-child {
+        margin-top: 20px; } }
+    @media (min-width: 992px) and (max-width: 1199px) {
+      #content_header h1 span {
+        padding: 5px 5px; }
       #content_header h1 span:last-child {
         margin-top: 20px; } }
   @media (min-width: 768px) and (max-width: 991px) {
     #content_header h1 {
       font-size: 35px; } }
+  @media (min-width: 992px) and (max-width: 1199px) {
+    #content_header h1 {
+      font-size: 38px; } }
 
+@media (max-width: 575px) {
+  #content_header {
+    padding-top: 0; } }
+@media (min-width: 576px) and (max-width: 767px) {
+  #content_header {
+    padding-top: 0; } }
 @media (min-width: 768px) and (max-width: 991px) {
   #content_header {
     padding-top: 0; } }
@@ -139,6 +174,9 @@ header {
           font-family: "Segoe UI Semibold", Tahoma, Geneva, Verdana, sans-serif;
           font-size: 11px;
           margin-top: 18px; }
+        @media (max-width: 575px) {
+          #services #content_services #box_services div p {
+            font-size: 16px; } }
         @media (min-width: 768px) and (max-width: 991px) {
           #services #content_services #box_services div h3 {
             display: flex;
@@ -149,6 +187,10 @@ header {
           #services #content_services #box_services div p {
             order: 3;
             font-size: 16px; } }
+      @media (max-width: 575px) {
+        #services #content_services #box_services div {
+          margin-top: 20px;
+          margin-bottom: 20px; } }
 
 /* ----------------------- PORTFOLIO ----------------------- */
 #portfolio .container {
@@ -169,11 +211,31 @@ header {
       #portfolio .container #top_portfolio ul li a:hover {
         border: 2px solid #4bcaff;
         color: #4bcaff; }
+      @media (max-width: 575px) {
+        #portfolio .container #top_portfolio ul li a:hover {
+          border: 2px solid transparent; } }
+      @media (min-width: 576px) and (max-width: 767px) {
+        #portfolio .container #top_portfolio ul li a:hover {
+          border: 2px solid transparent; } }
       @media (min-width: 768px) and (max-width: 991px) {
         #portfolio .container #top_portfolio ul li a:hover {
           border: 2px solid transparent; } }
     #portfolio .container #top_portfolio ul li:last-child {
       margin-right: -2%; }
+    @media (max-width: 575px) {
+      #portfolio .container #top_portfolio ul li {
+        padding-left: 0px; } }
+    @media (min-width: 576px) and (max-width: 767px) {
+      #portfolio .container #top_portfolio ul li {
+        padding-left: 0px; } }
+    @media (max-width: 575px) {
+      #portfolio .container #top_portfolio ul {
+        margin-top: 20px;
+        margin-bottom: 20px; } }
+    @media (min-width: 576px) and (max-width: 767px) {
+      #portfolio .container #top_portfolio ul {
+        margin-top: 20px;
+        margin-bottom: 20px; } }
     @media (min-width: 768px) and (max-width: 991px) {
       #portfolio .container #top_portfolio h2 {
         margin-bottom: 0;
@@ -187,15 +249,35 @@ header {
   #portfolio .container hr {
     border: 1px solid black;
     margin-left: 0;
-    margin-right: 0;
     margin-top: 0;
     margin-bottom: 80px;
     width: 4%; }
+  @media (max-width: 575px) {
+    #portfolio .container hr {
+      display: none; } }
+  @media (min-width: 576px) and (max-width: 767px) {
+    #portfolio .container hr {
+      display: none; } }
   #portfolio .container .container .row {
     margin-left: -27px !important;
     margin-right: -20px !important; }
+    @media (max-width: 575px) {
+      #portfolio .container .container .row .img-fluid {
+        margin-bottom: 30px; } }
+    @media (min-width: 576px) and (max-width: 767px) {
+      #portfolio .container .container .row .img-fluid {
+        margin-bottom: 30px; } }
   #portfolio .container .container .row:first-child {
-    margin-bottom: 15px; }
+    margin-bottom: 30px; }
+  @media (min-width: 576px) and (max-width: 767px) {
+    #portfolio .container .container .row:first-child {
+      margin-bottom: 0; } }
+  @media (min-width: 576px) and (max-width: 767px) {
+    #portfolio .container .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      flex-direction: center; } }
   @media (min-width: 768px) and (max-width: 991px) {
     #portfolio .container .container {
       display: flex;
@@ -242,6 +324,11 @@ header {
       #default .container #box_default #text_default button:hover {
         background-color: white;
         border: 2px solid transparent; }
+      @media (min-width: 576px) and (max-width: 767px) {
+        #default .container #box_default #text_default button {
+          position: relative;
+          bottom: -220px;
+          left: 35%; } }
       @media (min-width: 768px) and (max-width: 991px) {
         #default .container #box_default #text_default h2 {
           margin-bottom: 30px; }
@@ -253,12 +340,12 @@ header {
           margin-bottom: -100px; }
         #default .container #box_default #text_default button {
           position: relative;
-          bottom: -420px; } }
+          bottom: -350px; } }
+      @media (min-width: 576px) and (max-width: 767px) {
+        #default .container #box_default #text_default {
+          margin-bottom: -80px; } }
       #default .container #box_default #video_default {
         margin-top: 15px; }
-        @media (min-width: 768px) and (max-width: 991px) {
-          #default .container #box_default #video_default video {
-            margin: 30px auto; } }
     @media (min-width: 768px) and (max-width: 991px) {
       #default .container #box_default {
         display: flex;
@@ -327,7 +414,7 @@ header {
       margin-bottom: 0 !important; }
     #john_doe .container #content_who #content_social p {
       font-size: 14px;
-      margin-bottom: 30px; }
+      margin-bottom: 35px; }
     #john_doe .container #content_who #content_social ul {
       display: flex;
       justify-content: space-between;
@@ -340,6 +427,14 @@ header {
       #john_doe .container #content_who #content_social ul li a:hover {
         border: 2px solid #4bcaff;
         color: #4bcaff; }
+    @media (max-width: 575px) {
+      #john_doe .container #content_who #content_social ul {
+        margin-right: auto;
+        margin-left: auto; } }
+    @media (min-width: 576px) and (max-width: 767px) {
+      #john_doe .container #content_who #content_social ul {
+        margin-right: auto;
+        margin-left: auto; } }
     @media (min-width: 768px) and (max-width: 991px) {
       #john_doe .container #content_who #content_social ul {
         margin-right: auto;
@@ -353,6 +448,10 @@ header {
         display: flex;
         flex-direction: column;
         align-items: center; } }
+  @media (min-width: 576px) and (max-width: 767px) {
+    #john_doe .container {
+      padding-top: 80px;
+      padding-bottom: 80px; } }
 
 /* ----------------------- TESTIMONIALS ----------------------- */
 #testimonials {
@@ -389,8 +488,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  height: 810px; }
+  justify-content: center; }
   #contact .container {
     margin: 80px 0;
     display: flex;
@@ -434,12 +532,24 @@ header {
         margin-top: 20px;
         font-family: "Segoe UI Semibold", Tahoma, Geneva, Verdana, sans-serif;
         font-size: 14px; }
+      @media (max-width: 575px) {
+        #contact .container form #form_top p {
+          display: none; } }
+      @media (min-width: 576px) and (max-width: 767px) {
+        #contact .container form #form_top p {
+          display: none; } }
     #contact .container form #form_center {
       display: flex;
       justify-content: space-between; }
       #contact .container form #form_center ul {
         font-family: "Segoe UI Semibold", Tahoma, Geneva, Verdana, sans-serif;
         font-size: 14px; }
+      @media (max-width: 575px) {
+        #contact .container form #form_center ul {
+          display: none; } }
+      @media (min-width: 576px) and (max-width: 767px) {
+        #contact .container form #form_center ul {
+          display: none; } }
     @media (min-width: 768px) and (max-width: 991px) {
       #contact .container form button {
         display: flex;
@@ -447,40 +557,83 @@ header {
         align-items: center; } }
 
 /* ----------------------- FOOTER ----------------------- */
-#footer {
+footer {
   background-color: #353f47;
   display: flex;
+  flex-direction: column;
   align-items: center;
   padding-top: 80px;
   padding-bottom: 80px; }
-  #footer #content_footer {
+  footer #content_footer {
     display: flex;
     justify-content: space-between;
     align-items: center; }
-    #footer #content_footer nav ol {
+    footer #content_footer nav ol {
       background-color: transparent !important; }
-      #footer #content_footer nav ol li a {
+      footer #content_footer nav ol li a {
         color: #515f67 !important;
         font-family: "Segoe UI Semibold", Tahoma, Geneva, Verdana, sans-serif;
         font-size: 12px; }
-      @media (min-width: 768px) and (max-width: 991px) {
-        #footer #content_footer nav ol li a {
+      @media (max-width: 575px) {
+        footer #content_footer nav ol li a {
+          font-size: 18px; } }
+      @media (min-width: 576px) and (max-width: 767px) {
+        footer #content_footer nav ol li a {
           font-size: 16px; } }
-      #footer #content_footer nav ol li :hover {
+      @media (min-width: 768px) and (max-width: 991px) {
+        footer #content_footer nav ol li a {
+          font-size: 16px; } }
+      footer #content_footer nav ol li :hover {
         text-decoration: none !important;
         color: #4bcaff !important; }
-      #footer #content_footer nav ol li:nth-child(2)::before,
-      #footer #content_footer nav ol li:nth-child(3)::before,
-      #footer #content_footer nav ol li:nth-child(4)::before {
+      footer #content_footer nav ol li:nth-child(2)::before,
+      footer #content_footer nav ol li:nth-child(3)::before,
+      footer #content_footer nav ol li:nth-child(4)::before {
         content: "|"; }
-    #footer #content_footer p {
+    footer #content_footer p {
       padding-right: 5px;
       display: flex;
       color: #515f67;
       font-family: "Segoe UI Semibold", Tahoma, Geneva, Verdana, sans-serif;
       font-size: 12px; }
-    @media (min-width: 768px) and (max-width: 991px) {
-      #footer #content_footer p {
+    @media (max-width: 575px) {
+      footer #content_footer p {
+        font-size: 18px; } }
+    @media (min-width: 576px) and (max-width: 767px) {
+      footer #content_footer p {
         font-size: 16px; } }
+    @media (min-width: 768px) and (max-width: 991px) {
+      footer #content_footer p {
+        font-size: 16px; } }
+  @media (max-width: 575px) {
+    footer #content_footer {
+      display: flex;
+      flex-direction: column; } }
+  @media (min-width: 576px) and (max-width: 767px) {
+    footer #content_footer {
+      display: flex;
+      flex-direction: column; } }
+  footer #footer_none {
+    display: none;
+    color: #515f67; }
+  @media (max-width: 575px) {
+    footer #footer_none {
+      display: flex;
+      flex-direction: row;
+      font-size: 14px; } }
+  @media (min-width: 576px) and (max-width: 767px) {
+    footer #footer_none {
+      display: flex;
+      flex-direction: row;
+      font-size: 12px; } }
+
+@media (max-width: 575px) {
+  footer {
+    padding-top: 30px;
+    padding-bottom: 15px; } }
+@media (min-width: 576px) and (max-width: 767px) {
+  footer {
+    padding-top: 40px;
+    padding-bottom: 20px; } }
 
 /*# sourceMappingURL=style.css.map */

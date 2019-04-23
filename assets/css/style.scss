@@ -23,7 +23,7 @@
 
 // VARIABLES 
 
-$breadcrumb-divider: quote("|");
+$breadcrumb-divider: quote("|"); // pour remplacer le tiret "/"du footer issu de bootstrap
 
 $font-regular: 'segoe', sans-serif;
 $font-bold: 'segoe-bold', sans-serif;
@@ -36,8 +36,20 @@ $font-light-serif: 'segoe-light', serif;
 
 // MIXIN 
 
+@mixin for-extra-small-devices { 
+    @media (max-width: 575px) { @content; }
+}
+
+@mixin for-small-devices  {
+    @media (min-width: 576px) and (max-width: 767px) { @content; }
+}
+
 @mixin for-medium-devices {
     @media (min-width: 768px) and (max-width: 991px)  { @content; }
+}
+
+@mixin for-large-devices {
+    @media (min-width: 992px) and (max-width: 1199px) { @content; }
 }
 
 
@@ -57,17 +69,13 @@ li {
     list-style: none;
 }
 
-@include for-medium-devices{
+@include for-medium-devices{ // règles s'appliquant à tous les h2 et hr de la page
 
     h2 {
         text-align: center;
         font-family: $font-regular;
         font-size: 40px;
         margin-bottom: 50px;
-    }
-
-    #box_nav {
-        position: initial !important;
     }
 
     hr {
@@ -77,6 +85,9 @@ li {
 }
 
 // CSS 
+
+/* ----------------------- HEADER ----------------------- */
+
  
 header { 
     background-image: url('../pictures/background_header.jpg');
@@ -84,7 +95,7 @@ header {
     background-position: center;
     height: 100vh;
     
-    #box_nav { 
+    #box_nav {  
         background-color: #353f47;
         display: flex;
         align-items: center;
@@ -122,12 +133,40 @@ header {
                                 border: 1px solid transparent;
                             }
 
+                            .active {
+                                border: 1px solid #4bcaff;
+                            }
+
                             a:hover {
                                border: 1px solid #4bcaff;
                                color: #4bcaff;
                             }
 
+                            @include for-extra-small-devices {
+                                .active {
+                                    border: 1px solid transparent;
+                                }
+
+                                a:hover {
+                                    border: 2px solid transparent;
+                                }
+                            }
+
+                            @include for-small-devices {
+                                .active {
+                                    border: 1px solid transparent;
+                                }
+
+                                a:hover {
+                                    border: 2px solid transparent;
+                                }
+                            }
+
                             @include for-medium-devices{
+                                .active {
+                                    border: 1px solid transparent;
+                                }
+
                                 a:hover {
                                     border: 1px solid transparent;
                                 }
@@ -144,11 +183,23 @@ header {
             }
         }
 
-        // @include for-medium-devices {
-        //     button {
-        //         border-color: #4bcaff !important;
-        //     }
-        // }
+        @include for-extra-small-devices {
+            #box_nav {
+                position: initial;
+            }
+        }
+
+        @include for-small-devices {
+            #box_nav {
+                position: initial;
+            }
+        }
+
+        @include for-medium-devices {
+            #box_nav {
+                position: initial;
+            }
+        }
     }
 
     #content_header {
@@ -175,9 +226,19 @@ header {
                 padding: 5px 15px;
             }
 
-            @include for-medium-devices {
+            @include for-medium-devices { 
                 span {
-                    padding: 5px 10px;
+                    padding: 5px 5px;
+                }
+
+                span:last-child {
+                    margin-top: 20px;
+                }
+            }
+            
+            @include for-large-devices { 
+                span {
+                    padding: 5px 5px;
                 }
 
                 span:last-child {
@@ -191,9 +252,27 @@ header {
                 font-size: 35px;
             }
         }
+
+        @include for-large-devices {
+            h1 {
+                font-size: 38px;
+            }
+        }
     }
 
-    @include for-medium-devices() {
+    @include for-extra-small-devices {
+        #content_header {
+            padding-top: 0;
+        }
+    }
+
+    @include for-small-devices {
+        #content_header {
+            padding-top: 0;
+        }
+    }
+
+    @include for-medium-devices {
         #content_header {
             padding-top: 0;
         }
@@ -246,6 +325,12 @@ header {
                     margin-top: 18px;
                 }
 
+                @include for-extra-small-devices {
+                    p {
+                        font-size: 16px;
+                    }
+                }
+
                 @include for-medium-devices {
                     h3 {
                         display: flex;
@@ -262,7 +347,14 @@ header {
                         font-size: 16px;
                     }
                 }
-            }    
+            }   
+            
+            @include for-extra-small-devices {
+                div {
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                }
+            }
         }
     }
 }
@@ -299,6 +391,18 @@ header {
                         color: #4bcaff;
                     }
 
+                    @include for-extra-small-devices {
+                        a:hover {
+                            border: 2px solid transparent;
+                        }
+                    }
+
+                    @include for-small-devices {
+                        a:hover {
+                            border: 2px solid transparent;
+                        }
+                    }
+
                     @include for-medium-devices {
                         a:hover {
                             border: 2px solid transparent;
@@ -309,6 +413,32 @@ header {
                 li:last-child {
                     margin-right: -2%;
                 }
+
+                @include for-extra-small-devices {
+                    li { 
+                    padding-left: 0px;
+                    }
+                }
+
+                @include for-small-devices {
+                    li { 
+                    padding-left: 0px;
+                    }
+                }
+            }
+
+            @include for-extra-small-devices {
+                ul {
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                }  
+            }
+
+            @include for-small-devices {
+                ul {
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                }  
             }
 
             @include for-medium-devices {
@@ -331,20 +461,58 @@ header {
         hr {
             border: 1px solid black;
             margin-left: 0;
-            margin-right: 0;
             margin-top: 0;
             margin-bottom: 80px;
             width: 4%;
+        }
+
+        @include for-extra-small-devices {
+            hr {
+                display: none;
+            }
+        }
+
+        @include for-small-devices {
+            hr {
+                display: none;
+            }
         }
 
         .container {
             .row {
                 margin-left: -27px !important;
                 margin-right: -20px !important;
+
+                @include for-extra-small-devices {
+                    .img-fluid {
+                        margin-bottom: 30px;
+                    }
+                }
+
+                @include for-small-devices {
+                    .img-fluid {
+                        margin-bottom: 30px;
+                    }
+                }
             }
 
             .row:first-child {
-                margin-bottom: 15px;
+                margin-bottom: 30px;
+            }
+
+            @include for-small-devices {
+                .row:first-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        @include for-small-devices {
+            .container {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                flex-direction: center;
             }
         }
 
@@ -418,6 +586,14 @@ header {
                     border: 2px solid transparent;
                 }
 
+                @include for-small-devices {
+                    button {
+                        position: relative;
+                        bottom: -220px;
+                        left: 35%;
+                    }
+                }
+                        
                 @include for-medium-devices {
                     h2 {
                         margin-bottom: 30px;
@@ -437,19 +613,19 @@ header {
 
                      button {
                         position: relative;
-                        bottom: -420px;
+                        bottom: -350px;
                     }
                 }
             }    
-            
+
+            @include for-small-devices {
+                #text_default {
+                    margin-bottom: -80px;
+                }
+            }   
+
             #video_default {
                 margin-top: 15px;
-
-                @include for-medium-devices {
-                    video {
-                        margin: 30px auto;
-                    }
-                }
             }
         }
 
@@ -565,7 +741,7 @@ header {
 
                 p {
                     font-size: 14px;
-                    margin-bottom: 30px;
+                    margin-bottom: 35px;
                 }
 
                 ul {
@@ -589,6 +765,20 @@ header {
                     }
                 }
 
+                @include for-extra-small-devices {
+                    ul {
+                        margin-right: auto;
+                        margin-left: auto;
+                    }
+                }
+
+                @include for-small-devices {
+                    ul {
+                        margin-right: auto;
+                        margin-left: auto;
+                    }
+                }
+
                 @include for-medium-devices {
                     ul {
                         margin-right: auto;
@@ -605,12 +795,20 @@ header {
             }
         }
 
+
         @include for-medium-devices {
             #content_who {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
             }
+        }
+    }
+
+    @include for-small-devices {
+        .container {
+            padding-top: 80px;
+            padding-bottom: 80px;
         }
     }
 }
@@ -670,7 +868,6 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 810px;
 
     .container {
         margin: 80px 0;
@@ -734,6 +931,18 @@ header {
                     font-family: $font-semibold;
                     font-size: 14px;
                 }
+
+                @include for-extra-small-devices {
+                    p {
+                        display: none;
+                    }
+                }
+
+                @include for-small-devices {
+                    p {
+                        display: none;
+                    }
+                }
             }
 
             #form_center {
@@ -743,6 +952,18 @@ header {
                 ul {
                     font-family: $font-semibold;
                     font-size: 14px;
+                }
+
+                @include for-extra-small-devices {
+                    ul {
+                        display: none;
+                    }
+                }
+
+                @include for-small-devices {
+                    ul {
+                        display: none;
+                    }
                 }
             }
 
@@ -759,9 +980,10 @@ header {
 
 /* ----------------------- FOOTER ----------------------- */
 
-#footer {
+footer {
     background-color: #353f47;
     display: flex;
+    flex-direction: column;
     align-items: center;
     padding-top: 80px;
     padding-bottom: 80px;
@@ -784,11 +1006,24 @@ header {
                         font-size: 12px;
                     }
 
+                    @include for-extra-small-devices {
+                        a {
+                            font-size: 18px;
+                        }
+                    }
+
+                    @include for-small-devices {
+                        a { 
+                            font-size: 16px;
+                        }
+                    }
+
                     @include for-medium-devices {
                         a { 
                             font-size: 16px;
                         }
                     }
+
                 }
 
                 li :hover {
@@ -812,10 +1047,74 @@ header {
             font-size: 12px;
         }
 
+        @include for-extra-small-devices {
+            p {
+                font-size: 18px;
+            }
+        }
+
+        @include for-small-devices {
+            p {
+                font-size: 16px;
+            }
+        }
+
         @include for-medium-devices {
             p {
                 font-size: 16px;
             }
         }
+    }
+
+    @include for-extra-small-devices {
+        #content_footer {
+            display: flex;
+            flex-direction: column;
+  
+        }  
+      } 
+
+    @include for-small-devices {
+      #content_footer {
+          display: flex;
+          flex-direction: column;
+
+      }  
+    } 
+
+    #footer_none {
+        display: none;
+        color: #515f67;
+    }
+
+    @include for-extra-small-devices {
+        #footer_none {
+            display: flex;
+            flex-direction: row;
+            font-size: 14px;
+        }
+    }
+
+    @include for-small-devices {
+        #footer_none {
+            display: flex;
+            flex-direction: row;
+            font-size: 12px;
+        }
+    }
+
+}
+
+@include for-extra-small-devices {
+    footer {
+        padding-top: 30px;
+        padding-bottom: 15px;
+    }
+}
+
+@include for-small-devices {
+    footer {
+        padding-top: 40px;
+        padding-bottom: 20px;
     }
 }

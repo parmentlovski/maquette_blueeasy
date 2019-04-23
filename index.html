@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Blueasy</title>
   </head>
-  <body>
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">
 
     <header id="return_top">
 
@@ -25,20 +25,20 @@
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
 
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#return_top">HOME</a>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#return_top">HOME <span class="sr-only">(current)</span></a>
                         </li>
-                        <li class="nav-item active">
+                        <li class="nav-item">
                             <a class="nav-link" href="#services">SERVICES</a>
                         </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">FEATURES</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#default">FEATURES</a>
                         </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">PORTOFOLIO</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#portfolio">PORTOFOLIO</a>
                         </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">CONTACT</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">CONTACT</a>
                         </li>
                     </ul>
                 </div>
@@ -62,22 +62,22 @@
             <h2>SERVICES</h2>
             <hr>
             <div id="box_services" class="row">
-                <div id="coffee" class="col-md-6 col-ls-3">
+                <div id="coffee" class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3">
                     <img src="assets/pictures/logo_coffee.png" class="img-fluid" alt="Image représentant un café" width="34" height="48">
                     <h3>COFFEE</h3>
                     <p>Apple pie icing sweet. Brownie jelly-o applicake applicake sweet roll liquorice bear claw. Jujubes carrot cake cotton candy sweet tart brownie. Tiramisu applicake jujubes.</p>
                 </div>
-                <div id="instant" class="col-md-6 col-ls-3">
+                <div id="instant" class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3">
                     <img src="assets/pictures/logo_instant.png" class="img-fluid" alt="Image représentant un appareil photo" width="48" height="48">
                     <h3>INSTANT</h3>
                     <p>Apple pie icing sweet. Brownie jelly-o applicake applicake sweet roll liquorice bear claw. Jujubes carrot cake cotton candy sweet tart brownie. Tiramisu applicake jujubes.</p>
                 </div>
-                <div id="serious" class="col-md-6 col-ls-3">
-                    <img src="assets/pictures/logo_serious.png" class="img-fluid" alt="Image représentant un ??" width="47" height="45">
+                <div id="serious" class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+                    <img src="assets/pictures/logo_serious.png" class="img-fluid" alt="Image représentant une enceinte" width="47" height="45">
                     <h3>SERIOUS</h3>
                     <p>Apple pie icing sweet. Brownie jelly-o applicake applicake sweet roll liquorice bear claw. Jujubes carrot cake cotton candy sweet tart brownie. Tiramisu applicake jujubes.</p>
                 </div>
-                <div id="frame" class="col-md-6 col-ls-3"> 
+                <div id="frame" class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3"> 
                     <img src="assets/pictures/logo_frame.png" class="img-fluid" alt="Image représentant une télévision" width="48" height="48">
                     <h3>FRAME</h3>
                     <p>Apple pie icing sweet. Brownie jelly-o applicake applicake sweet roll liquorice bear claw. Jujubes carrot cake cotton candy sweet tart brownie. Tiramisu applicake jujubes.</p>
@@ -91,10 +91,11 @@
 <section id="portfolio" class="container-fluid">
 
     <div class="container pl-0">
-        
+
         <div id="top_portfolio" class="row ml-0">
+            
             <h2>PORTFOLIO</h2>
-        
+
             <ul class="nav justify-content-end">
                 <li class="nav-item"> 
                     <a class="nav-link active" href="#">ALL</a>
@@ -116,16 +117,16 @@
         <hr>
         <div class="container">
             <div class="row">
-                <div class="col-md-3 col-lg-3"><img src="assets/pictures/portfolio_img1.jpg" class="img-fluid" alt="photo d'un pont en S" width="270" height="270"></div>
-                <div class="col-md-3 col-lg-3"><img src="assets/pictures/portfolio_img2.jpg" class="img-fluid" alt="photo du toit d'un pont" width="270" height="270"></div>
-                <div class="col-md-3 col-lg-3"><img src="assets/pictures/portfolio_img3.jpg" class="img-fluid" alt="photo d'une île" width="270" height="270"></div>
-                <div class="col-md-3 col-lg-3"><img src="assets/pictures/portfolio_img4.jpg" class="img-fluid" alt="photo d'un arbre sur une île"></div>
+                <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3"><img src="assets/pictures/portfolio_img1.jpg" class="img-fluid" alt="photo d'un pont en S" width="270" height="270"></div>
+                <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3"><img src="assets/pictures/portfolio_img2.jpg" class="img-fluid" alt="photo du toit d'un pont" width="270" height="270"></div>
+                <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3"><img src="assets/pictures/portfolio_img3.jpg" class="img-fluid" alt="photo d'une île" width="270" height="270"></div>
+                <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3"><img src="assets/pictures/portfolio_img4.jpg" class="img-fluid" alt="photo d'un arbre sur une île"></div>
             </div>
             <div class="row">
-                <div class="col-md-3 col-lg-3"><img src="assets/pictures/portfolio_img5.jpg" class="img-fluid" alt="photo d'un cabane" width="270" height="270"></div>
-                <div class="col-md-3 col-lg-3"><img src="assets/pictures/portfolio_img6.jpg" class="img-fluid"  alt="photo d'un surfeur" width="270" height="270"></div>
-                <div class="col-md-3 col-lg-3"><img src="assets/pictures/portfolio_img7.jpg" class="img-fluid" alt="photo d'une chaine de montagne" width="270" height="270"></div>
-                <div class="col-md-3 col-lg-3"><img src="assets/pictures/portfolio_img8.jpg" class="img-fluid" alt="photo d'une montagne" width="270" height="270"></div>
+                <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3"><img src="assets/pictures/portfolio_img5.jpg" class="img-fluid" alt="photo d'un cabane" width="270" height="270"></div>
+                <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3"><img src="assets/pictures/portfolio_img6.jpg" class="img-fluid"  alt="photo d'un surfeur" width="270" height="270"></div>
+                <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3"><img src="assets/pictures/portfolio_img7.jpg" class="img-fluid" alt="photo d'une chaine de montagne" width="270" height="270"></div>
+                <div class="col-6 col-sm-6 col-md-3 col-lg-3 col-xl-3"><img src="assets/pictures/portfolio_img8.jpg" class="img-fluid" alt="photo d'une montagne" width="270" height="270"></div>
             </div>
         </div>
     </div>
@@ -136,14 +137,14 @@
 <section id="default" class="container-fluid">
         <div class="container p-0">
             <div class="row" id="box_default">
-                <div id="text_default" class="col-md-12 col-lg-5 pr-0">
+                <div id="text_default" class="col-sm-12 col-md-12 col-lg-5 col-xl-5 pr-0">
                     <h2>JUST DEFAULT SECTION</h2>
                     <hr>
                     <p id="space_default">Bear claw marzipan bear claw applicake I love muffin. Lemon drops gummi bears pastry gummi bears sesame snaps I love unerdwear.com. Soufflé cotton candy dessert candy ice cream wafer gummies cheesecake brownie.</p>
                     <p id="space_video">Muffin chupa chups jelly beans sweet pie applicake. Croissant chocolate cake I love pudding. Ice cream I love powder pudding apple pie marshmallow. Cupcake marzipan oat cake bonbon I love candy canes toffee.</p>
                     <button>VISIT ME</button>
                 </div>
-                <div id="video_default" class="col-md-12 col-lg-6 offset-lg-1">
+                <div id="video_default" class="col-10 offset-1 col-sm-8 offset-sm-2 col-md-8 offset-md-0 col-lg-6 offset-lg-1 col-xl-6 offset-xl-1 embed-responsive embed-responsive-16by9">
                     <video src="assets/video/404.mp4"  class="embed-responsive-item" type="video/mp4" controls width="545"></video>
                 </div>
             </div>
@@ -175,7 +176,7 @@
         <h2>WHO IS JOHN DOE ?</h2>
         <hr>
             <div id="content_who" class="row pl-0">
-                <div id="content_text" class="col-lg-6">
+                <div id="content_text" class="col-lg-6 col-xl-6">
                     <p>Bear claw marzipan bear claw applicake I love muffin. Lemon drops gummi bears pastry gummi bears sesame snaps I love unerdwear.com.
                         Soufflé cotton candy dessert candy ice cream wafer gummies cheesecake brownie.
                     </p>
@@ -183,7 +184,7 @@
                         pie marshmallow. Cupcake marzipan oat cake bonbon I love candy canes toffee.
                     </p>
                 </div>
-                <div id="content_social" class="col-lg-6">
+                <div id="content_social" class="col-lg-6 col-xl-6">
                     <p>Pudding dessert jujubes tiramisu gingerbread croissant tiramisu applicake. Sesame snaps sugar plum cotton candy chocolate
                         bonbon lemon drops candy canes cotton candy. Cake toffee pie bear claw pastry.
                     </p>
@@ -227,22 +228,22 @@
 
         <form>
                 <div id="form_top" class="row">
-                    <div class="form-group col-md-5 col-lg-5">
+                    <div class="form-group col-md-5 col-lg-5 col-xl-5">
                         <label for="full_name">FULL NAME</label>
                         <input type="text" class="form-control" id="full_name">
                     </div>
-                    <p class="col-md-6 offset-md-1 col-lg-6 offset-lg-1">
+                    <p class="col-md-6 offset-md-1 col-lg-6 offset-lg-1 col-xl-6 offset-xl-1">
                         Jujubes bear claw croissant wafer sweet drops brownies chocolate bar. Sweet lollilop halvah tootsie roll cake fruit cake.
                         Chocolate cake chocolate bar gingerbread lollipop tant. Jujubes bear claw donut chupa chips.
                     </p>
                 </div>
 
                 <div id="form_center" class="row">
-                    <div class="form-group col-md-5 col-lg-5">
+                    <div class="form-group col-md-5 col-lg-5 col-xl-5">
                         <label for="email">EMAIL</label>
                         <input type="email" class="form-control" id="email">
                     </div>
-                    <ul class="col-md-6 offset-md-1 col-lg-6 offset-lg-1">
+                    <ul class="col-md-6 offset-md-1 col-lg-6 offset-lg-1 col-xl-6 offset-xl-1">
                         <li>Linda Newman</li>
                         <li>W325 State Road 123</li>
                         <li>Monbdovi, WI(Wisconsin) 98746-54321</li>
@@ -251,9 +252,9 @@
                 </div>
             <div class="form-group">
                 <label for="textarea">MESSAGE</label>
-                <textarea class="form-control col-lg-12" id="textarea" rows="5"></textarea>
+                <textarea class="form-control" id="textarea" rows="5"></textarea>
             </div>
-                <button type="submit" class="btn btn-primary col-md-4 offset-md-4 col-lg-4 offset-lg-0">MESSAGE</button>
+                <button type="submit" class="btn btn-primary col-4 offset-4 col-sm-4 offset-sm-4 col-md-4 offset-md-4 col-lg-4 offset-lg-0 col-xl-4 offset-xl-0">MESSAGE</button>
         </form>
     </div>
 
@@ -261,7 +262,21 @@
 
 <!-- ----------------------- FOOTER ----------------------- -->
 
-<section id="footer" class="container-fluid">
+<footer class="container-fluid">
+
+    <div id="footer_none" class="container"> 
+        <div class="row">
+            <p class="col-sm-8">Jujubes bear claw croissant wafer sweet drops brownies chocolate bar. Sweet lollilop halvah tootsie roll cake fruit cake.
+            Chocolate cake chocolate bar gingerbread lollipop tant. Jujubes bear claw donut chupa chips.</p>
+            
+            <ul class="col-sm-4">
+                <li>Linda Newman</li>
+                <li>W325 State Road 123</li>
+                <li>Monbdovi, WI(Wisconsin) 98746-54321</li>
+                <li>(715) 946 -1234</li>
+            </ul>
+        </div>
+    </div>
 
     <div id="content_footer" class="container pl-0">
         <nav aria-label="breadcrumb">
@@ -275,8 +290,9 @@
 
         <p>2013 &copy;</p>
     
-    </div>
-</section>
+    </div> 
+    
+</footer>
 
   <!-- ----------------------- SCRIPT -----------------------  -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
